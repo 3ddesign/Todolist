@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './App.css';
 import {Link} from 'react-router';
 
 class About extends Component {
@@ -12,7 +13,7 @@ class About extends Component {
           <h2>About</h2>
         </div>
         <p className="App-intro">
-            <Link to='/'>App</Link>
+        <Link to='/Todo'>Todo</Link>
         </p>
       </div>
     );

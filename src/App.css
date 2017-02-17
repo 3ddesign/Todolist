@@ -1,24 +1,71 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tasks {
+    text-align: left;
+    list-style-type: none;
+    width: 350px;
+    padding: 10px;
+    background-color: #fdf9b0;
+    border: 1px solid #fdf9b7;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 18px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    font-family: Comic Sans, cursive, sans-serif;
+}
+
+.tasks1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 7px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #4ca0fd;
+}
+
+.item-value {
+  margin-left: -20px;
+    width: 250px;
+    white-space: pre-line;
+}
+
+.item-add {
+
+    display: inline-block;
+    min-width: 110px;
+    margin: 4px 4px;
+    padding: 4px;
+    font: 700 12px/1 'Open Sans', sans-serif;
+    border-radius: 4px;
+    background-color: #4ca0fd;
+    cursor: pointer;
 }

@@ -9,12 +9,12 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>App</h2>
+           <h2>App</h2>
+            </div>
+          <p className="App-intro">
+                        <Link to='/Todo'>Todo List</Link>
+          </p>
         </div>
-        <p className="App-intro">
-<Link to='/about'>About</Link>
-        </p>
-      </div>
     );
   }
 }
