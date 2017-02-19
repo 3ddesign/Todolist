@@ -14,8 +14,6 @@ class List extends Component {
 
 function press() {
     items.push(document.getElementById("inp").value);
-    console.log(items);
-
 }
 
 
