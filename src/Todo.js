@@ -8,18 +8,18 @@ var List = React.createClass({
         	items: ['first', 'second']
         };
     },
-    //
-    // componentDidMount() {
-    // 		setTimeout(function () {
-    //         this.setState({
-    //             items: this.state.items.concat(['third'])
-    //         });
-    //     }.bind(this), 1000);
-    // },
 
-    // function press() {
-    //     this.setState({items: this.state.items.concat([document.getElementById("inp").value])});
-    // }
+    componentDidMount() {
+      if (true) {
+    		setTimeout(function () {
+            this.setState({
+                items: this.state.items.concat([document.getElementById("inp").value])
+            });
+        }.bind(this), 1000);
+        }
+    },
+
+
 
     render: function() {
         var stationComponents = this.state.items.map(function(item) {
@@ -29,14 +29,12 @@ var List = React.createClass({
     }
 });
 
-
-
 class Todo extends Component {
     render () {
       function press() {
-        this.setState({
-            items: this.state.items.concat(['third'])
-        });
+
+            alert([document.getElementById("inp").value]);
+
       }
         return (
 
@@ -48,7 +46,7 @@ class Todo extends Component {
                     <label>
                         <input type="text" id="inp" className="item-value"/>
                     </label>
-                    <input type="submit" value="Save" className="item-add" onClick={press}/>
+                    <input type="submit" value="Save" id="button" className="item-add"  onClick={press}  />
 
                 </form>
                 <p className="App-intro">
